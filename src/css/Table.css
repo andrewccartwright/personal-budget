@@ -1,0 +1,47 @@
+td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+input {
+    width: 170px;
+}
+
+td, th {
+    width: 175px;
+    height: 50px;
+}
+
+.input-field {
+    width: 7.5vw;
+}
+
+.table-div {
+    margin-bottom: 5vh;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons-column {
+    border: none;
+    width: 175px;
+    height: 50px;
+}
+
+.edit-buttons, .buttons {
+    float: left;
+    border: none;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+tr .buttons {
+    visibility: hidden;
+}
+
+tr:hover .buttons {
+    visibility: visible;
+}
