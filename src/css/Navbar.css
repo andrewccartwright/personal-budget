@@ -7,6 +7,7 @@
     left: 0;
     color: white;
     position: fixed;
+    z-index: 1;
 }
 
 #title {
@@ -24,9 +25,33 @@
     margin-right: auto;
 }
 
+#logout-button {
+    right: 0;
+    top: 2vh;
+    margin-right: 5vw;
+    position: fixed;
+}
+
 a, a:hover {
     text-decoration: none;
     color: white;
     font-size: 24px;
     margin-left: 5vw;
+}
+
+@media (max-width: 600px) {
+    #title {
+        margin-left: 5vw;
+        font-size: 16px;
+        width: 25vw;
+    }
+
+    #navbar-links {
+        width: 40vw;
+    }
+
+    a, a:hover {
+        font-size: 14px;
+        margin-left: 2vw;
+    }
 }

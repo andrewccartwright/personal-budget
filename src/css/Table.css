@@ -4,12 +4,12 @@ td, th {
 }
 
 input {
-    width: 170px;
+    width: 13vw;
 }
 
 td, th {
-    width: 175px;
-    height: 50px;
+    width: 15vw;
+    height: 5vh;
 }
 
 .input-field {
@@ -25,8 +25,13 @@ td, th {
 
 .buttons-column {
     border: none;
-    width: 175px;
-    height: 50px;
+    width: 15vw;
+    height: 5vh;
+}
+
+#hidden-column {
+    width: 15vw;
+    border: none;
 }
 
 .edit-buttons, .buttons {
@@ -44,4 +49,10 @@ tr .buttons {
 
 tr:hover .buttons {
     visibility: visible;
+}
+
+@media (max-width: 600px) {
+    .buttons-column {
+        width: 15vw;
+    }
 }

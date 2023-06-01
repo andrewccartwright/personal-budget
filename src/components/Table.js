@@ -82,10 +82,11 @@ class Table extends React.Component {
         const data = {
             "name": name,
             "planned": planned,
-            "actual": actual
+            "actual": actual,
+            "email": this.props.email
         }
 
-        axios.post(url + this.props.path, data)
+        axios.post(url + this.props.path, data, { withCredentials: true })
             .then((res) => {
                 console.log(res);
                 window.location.reload();
@@ -117,10 +118,11 @@ class Table extends React.Component {
         const data = {
             "name": name,
             "planned": planned,
-            "actual": actual
+            "actual": actual,
+            "email": this.props.email
         }
 
-        axios.put(`${url}${this.props.path}/${id}`, data)
+        axios.put(`${url}${this.props.path}/${id}`, data, { withCredentials: true })
             .then((res) => {
                 console.log(res);
                 window.location.reload();
@@ -208,6 +210,7 @@ class Table extends React.Component {
                         <th>Planned</th>
                         <th>Actual</th>
                         <th>Difference</th>
+                        <th id="hidden-column"></th>
                     </tr>
                 </thead>
                 <tbody>
